@@ -48,7 +48,7 @@ namespace Code.Summons.Explosions
             particle.PlayVFX(transform.position, Quaternion.identity);
             
             DamageContext context = new DamageContext(_damage, _attackSource, this, _attackData);
-            damageCaster.StartCasting();
+            damageCaster?.StartCasting();
             damageCaster?.CastDamage(_damageCasterData, context, out _);
         }
 
