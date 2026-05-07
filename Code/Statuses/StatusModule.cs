@@ -120,10 +120,4 @@ namespace Code.Statuses
         
         public virtual bool Has(StatusType type) => CurrentStatuses.Contains(type);
     }
-
-    public struct StatusPair
-    {
-        public Status status;
-        public StatusDataSO statusData;
-    }
 }
